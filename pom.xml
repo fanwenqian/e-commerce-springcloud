@@ -8,6 +8,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>e-commerce-common</module>
+        <module>e-commmerce-mvc-config</module>
     </modules>
     <!--必须写为pom，为包含的所有模块提供依赖-->
     <packaging>pom</packaging>
