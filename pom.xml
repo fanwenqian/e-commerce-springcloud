@@ -9,6 +9,7 @@
     <modules>
         <module>e-commerce-common</module>
         <module>e-commmerce-mvc-config</module>
+        <module>e-commerce-alibaba-nacos-client</module>
     </modules>
     <!--必须写为pom，为包含的所有模块提供依赖-->
     <packaging>pom</packaging>
