@@ -1,0 +1,57 @@
+server:
+  port: 7000
+  servlet:
+    context-path: /e-commerce-authority-center
+
+spring:
+  application:
+    name: e-commerce-authority-center
+  cloud:
+    nacos:
+      discovery:
+        enabled: true  # 如果不想使用 Nacos 进行服务注册和发现，设置为 false 即可
+        server-addr: 192.168.116.130:8848
+        # server-addr: 192.168.116.130:8848,192.168.116.130:8858,192.168.116.130:8868 # Nacos 服务集群地址
+        namespace: b7f3b883-3a26-4556-9d96-c55402204a78
+        metadata:
+          management:
+            context-path: ${server.servlet.context-path}/actuator
+  datasource:
+    url: jdbc:mysql://42.192.190.139:23336/ecommerce?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: jeff10rey,.
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    # 连接池
+    hikari:
+      # 连接池最大连接数，默认是10
+      maximum-pool-size: 8
+      minimum-idle: 4
+      # 空闲连接存活最大时间，默认600000（10分钟）
+      idle-timeout: 30000
+      # 此属性控制从池返回的连接的默认自动提交行为,默认值：true
+      auto-commit: true
+      # 连接池名称
+      pool-name: MyHikariCP
+      # 此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
+      max-lifetime: 45000
+      # 数据库连接超时时间,默认30秒，即30000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+# 配置MybatisPlus
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+# 暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
