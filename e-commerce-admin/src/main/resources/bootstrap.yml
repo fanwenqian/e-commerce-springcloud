@@ -1,0 +1,32 @@
+server:
+  port: 7001
+  servlet:
+    context-path: /e-commerce-admin
+
+spring:
+  application:
+    name: e-commerce-admin
+  cloud:
+    nacos:
+      discovery:
+        enabled: true  # 如果不想使用 Nacos 进行服务注册和发现，设置为 false 即可
+        server-addr: 192.168.116.130:8848
+        # server-addr: 192.168.116.130:8848,192.168.116.130:8858,192.168.116.130:8868 # Nacos 服务集群地址
+        namespace: b7f3b883-3a26-4556-9d96-c55402204a78
+        metadata:
+          management:
+            context-path: ${server.servlet.context-path}/actuator
+  thymeleaf:
+    check-template: false
+    check-template-location: false
+
+# 暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' # 需要开放的端点。默认值只打开 health 和 info 两个端点。通过设置*,可以开放所有的端点
+  endpoint:
+    health:
+      show-details: always
+
