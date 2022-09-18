@@ -29,18 +29,18 @@ spring:
   # 需要在 pom.xml 中添加 spring-boot-starter-mail 依赖
   # 配置发送告警的邮箱服务器
   # 但是，这个要能连接上，否则会报错
-  mail:
-    host: smtp.qq.com
-    username: 1136568063@qq.com
-    password: webxrwyzfzlggfah
-    default-encoding: UTF-8
-  boot:
-    admin:
-      notify:
-        mail:
-          from: ${spring.mail.username}
-          to: wqfan1231@sina.com
-          cc: wqfan1231@sina.com
+#  mail:
+#    host: smtp.qq.com
+#    username: 1136568063@qq.com
+#    password: webxrwyzfzlggfah
+#    default-encoding: UTF-8
+#  boot:
+#    admin:
+#      notify:
+#        mail:
+#          from: ${spring.mail.username}
+#          to: wqfan1231@sina.com
+#          cc: wqfan1231@sina.com
 # 暴露端点
 management:
   endpoints:

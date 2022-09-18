@@ -16,10 +16,10 @@
 
    <dependencies>
        <!-- 实现 Java Mail 的自动化配置-->
-       <dependency>
+       <!--<dependency>
            <groupId>org.springframework.boot</groupId>
            <artifactId>spring-boot-starter-mail</artifactId>
-       </dependency>
+       </dependency>-->
        <!-- 开启登录认证 -->
        <dependency>
            <groupId>org.springframework.boot</groupId>
