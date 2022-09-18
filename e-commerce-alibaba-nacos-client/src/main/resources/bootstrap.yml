@@ -13,6 +13,9 @@ spring:
         server-addr: 192.168.116.130:8848
         # server-addr: 192.168.116.130:8848,192.168.116.130:8858,192.168.116.130:8868 # Nacos 服务集群地址
         namespace: b7f3b883-3a26-4556-9d96-c55402204a78
+        metadata:
+          management:
+            context-path: ${server.servlet.context-path}/actuator
 
 # 暴露端点
 management:
