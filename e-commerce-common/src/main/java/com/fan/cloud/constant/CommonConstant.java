@@ -6,11 +6,11 @@ package com.fan.cloud.constant;
 public class CommonConstant {
 
     /** RSA 公钥 */
-    public static final String PUBLIC_KEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAstwqyTzp9HBLij/7SCqkaFu/q" +
-            "C3F+hvhiLdIv8ROBCsFRKqXoas70MPXiArnJ0Ypm0E5xvQasUada2eiOvWINZZdjxtHggoyL28azHnvSSA6BCiIr69QNv1UUNgzia" +
-            "gz9WAnNr/adpklypDz5x4O3bNbV3FZw3Jf2EA63J290FTZC6Js4xNP3D7WlkRroUC7gvnrz8DXc7xQKtBLjoMsoaPhKOVWTwqW/gu" +
-            "lprVYnE5QcgwDasogkbhEgKUvRkdK9l1nhIOCX35CVrhovGsYLzoT979EHN5lgpI8R/wFQRtHQJjHjPx6HgXk36uZ2s9AonQGyIB9" +
-            "V9AEptF8liSc/nQIDAQAB";
+    public static final String PUBLIC_KEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuEY+0z+KtF1vGRDKsnnX3xNV8wvPi" +
+            "NDcA2Urax5P5rcObApN6xnsOFghoC2BFk6eEb1/wa+Efb3f12rBo2VaaNuJFPmVVIvbqUfwJcJJkpRUipfxveAeougAKrgJHEdtLa+pbI" +
+            "SgEEWh+AjRqX7bK/Ye0y65vFfhM+mFlHUy1odb6YZvso94uUSUapxUDGFVbDoyYedllkHYkusr8oPbhItdi0YrTu9Nokisfq7p2t1iQcl" +
+            "muyC3kuWFhkjh0MjmtdgnTzVc2MKJovXdaOUVGBbPGaG/au/jO0c/74uJW49+2HZn8VpUn6F02gpVmrGlhuruobB/4Adi53uoZsn5CwID" +
+            "AQAB";
 
     /** JWT 中存储用户信息的 key */
     public static final String JWT_USER_INFO_KEY = "e-commerce-user";

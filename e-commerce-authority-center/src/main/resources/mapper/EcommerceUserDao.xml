@@ -3,10 +3,10 @@
 <mapper namespace="com.fan.cloud.dao.EcommerceUserDao">
 
     <select id="findByUsername" resultType="com.fan.cloud.entity.EcommerceUser">
-        select id, username, password, extra_info, create_time, update_time from `t-ecommerce-user` where username = #{username}
+        select id, username, password, extra_info, create_time, update_time from `t_ecommerce_user` where username = #{username}
     </select>
 
     <select id="findByUsernameAndPassword" resultType="com.fan.cloud.entity.EcommerceUser">
-        select id, username, password, extra_info, create_time, update_time from `t-ecommerce-user` where username = #{username} and password = #{password}
+        select id, username, password, extra_info, create_time, update_time from `t_ecommerce_user` where username = #{username} and password = #{password}
     </select>
 </mapper>
