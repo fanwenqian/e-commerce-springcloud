@@ -1,0 +1,17 @@
+### 获取Token --> 登录功能的实现
+POST http://localhost:7000/e-commerce-authority-center/authority/token
+Content-Type: application/json
+
+{
+  "username":"fan.wenqian",
+  "password": "e10adc3949ba59abbe56e057f20f883e"
+}
+
+### 注册用户并返回 Token --> 注册功能实现
+POST http://localhost:7000/e-commerce-authority-center/authority/register
+Content-Type: application/json
+
+{
+  "username":"fan.wenqian4",
+  "password": "e10adc3949ba59abbe56e057f20f883e"
+}
